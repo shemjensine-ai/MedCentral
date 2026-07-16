@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MedCentral | Settings</title>
+
+<link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+<div class="brand">
+🏥 <h2>MedCentral</h2>
+</div>
+
+<nav>
+
+<a href="dashboard.html">📊 Dashboard</a>
+
+<a href="patient.html">🧑 Patients</a>
+
+<a href="doctors.html">👨‍⚕️ Doctors</a>
+
+<a href="appointments.html">📅 Appointments</a>
+
+<a href="billings.html">💳 Billing</a>
+
+<a class="active">⚙ Settings</a>
+
+</nav>
+
+
+</aside>
+
+<main>
+
+<header>
+
+<div>
+<h1>System Settings</h1>
+<p>Manage hospital information and application preferences</p>
+</div>
+
+<div class="admin">
+
+<img src="https://i.pravatar.cc/50">
+
+<div>
+<h4>Administrator</h4>
+<span>System Manager</span>
+</div>
+
+</div>
+
+
+</header>
+
+
+
+
+
+<section class="settings-container">
+
+
+
+<div class="card">
+
+
+<h2>🏥 Hospital Information</h2>
+
+
+<div class="form">
+
+
+<label>
+Hospital Name
+</label>
+
+<input type="text" value="MedCentral Hospital">
+
+
+
+<label>
+Hospital Email
+</label>
+
+<input type="email" value="admin@medcentral.com">
+
+
+
+<label>
+Phone Number
+</label>
+
+<input type="text" value="+255 700 000 000">
+
+
+
+<label>
+Address
+</label>
+
+<textarea>
+Dar es Salaam, Tanzania
+</textarea>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>👤 Administrator Account</h2>
+
+
+<div class="form">
+
+
+<label>
+Username
+</label>
+
+<input type="text" value="admin">
+
+<label>
+Email
+</label>
+
+<input type="email" value="admin@medcentral.com">
+
+
+
+<label>
+Change Password
+</label>
+
+<input type="password" placeholder="New password">
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>🔔 Notifications</h2>
+
+
+
+<div class="toggle">
+
+
+<p>New appointment alerts</p>
+
+<label class="switch">
+
+<input type="checkbox" checked>
+
+<span></span>
+
+</label>
+
+
+</div>
+
+
+
+<div class="toggle">
+
+
+<p>Patient registration alerts</p>
+
+
+<label class="switch">
+
+<input type="checkbox" checked>
+
+<span></span>
+
+</label>
+
+
+</div>
+
+
+
+<div class="toggle">
+
+
+<p>Billing notifications</p>
+
+
+<label class="switch">
+
+<input type="checkbox">
+
+<span></span>
+
+</label>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h2>🔐 Security</h2>
+
+
+<div class="security">
+
+
+<p>
+Two-factor authentication
+</p>
+
+
+<button id="securityBtn">
+Enable
+</button>
+
+
+</div>
+
+
+
+<p class="warning">
+⚠ Only authorized hospital staff should access patient records.
+</p>
+
+
+</div>
+
+<button class="save" id="saveBtn">
+Save Changes
+</button>
+
+</section>
+
+
+
+</main>
+
+
+</div>
+
+<footer class="footer">
+
+    <div class="hospital-logo">
+        🏥
+    </div>
+
+    <h3>
+        MedCentral
+    </h3>
+
+    <p>
+        Modern Healthcare Management System
+    </p>
+
+    <small>
+        © 2026 | Built with ❤️ by Jensine Shem
+    </small>
+
+</footer>
+
+<script src="css/js/settings.js"></script>
+
+</body>
+</html>

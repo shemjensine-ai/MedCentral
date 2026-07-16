@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Billing | MedCare</title>
+
+<link rel="stylesheet" href="css/billings.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+
+<div class="logo">
+<span>+</span> MedCare
+</div>
+
+
+<nav>
+
+<a href="dashboard.html">Dashboard</a>
+
+<a href="patient.html">Patients</a>
+
+<a href="doctor.html">Doctors</a>
+
+<a href="appointments.html">Appointments</a>
+
+<a class="active" href="billings.html">Billing</a>
+
+<a href="login.html">
+Logout
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<main>
+
+
+<section class="page-title">
+
+<h1>
+Billing Management
+</h1>
+
+<p>
+Manage patient invoices, healthcare payments, insurance claims,
+and financial records efficiently.
+</p>
+
+</section>
+
+
+
+
+
+
+<section class="overview">
+
+
+<div class="finance-card">
+
+<h4>Total Revenue</h4>
+
+<p>
+Completed hospital payments
+</p>
+
+<strong>
+$24,850
+</strong>
+
+</div>
+
+
+
+
+<div class="finance-card">
+
+<h4>Pending Payments</h4>
+
+<p>
+Outstanding patient balances
+</p>
+
+<strong>
+$4,230
+</strong>
+
+</div>
+
+
+
+
+
+<div class="finance-card">
+
+<h4>Invoices</h4>
+
+<p>
+Generated this month
+</p>
+
+<strong id="invoiceCount">
+0
+</strong>
+
+</div>
+
+
+
+
+
+
+<div class="finance-card">
+
+<h4>Insurance Claims</h4>
+
+<p>
+Awaiting approval
+</p>
+
+<strong>
+32
+</strong>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="billing-grid">
+
+
+
+
+
+<div class="panel">
+
+
+<h2>
+Create Invoice
+</h2>
+
+
+<p class="description">
+
+Generate a patient bill by recording medical services
+and associated charges.
+
+</p>
+
+
+
+<label>
+Patient Name
+</label>
+
+<input id="patient"
+placeholder="Enter patient name">
+
+
+
+<label>
+Patient ID
+</label>
+
+<input id="patientID"
+placeholder="Enter patient identification">
+
+
+
+
+
+<label>
+Medical Service
+</label>
+
+
+<select id="service">
+
+<option>
+Consultation
+</option>
+
+<option>
+Laboratory
+</option>
+
+<option>
+Medication
+</option>
+
+<option>
+Treatment
+</option>
+
+</select>
+
+
+
+
+<label>
+Amount
+</label>
+
+<input 
+id="amount"
+type="number"
+placeholder="Enter amount">
+
+
+
+<button onclick="createInvoice()">
+
+Generate Invoice
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel">
+
+
+<div class="table-header">
+
+<h2>
+Recent Invoices
+</h2>
+
+
+<input 
+id="search"
+placeholder="Search patient"
+onkeyup="searchInvoice()">
+
+
+</div>
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+Invoice
+</th>
+
+
+<th>
+Patient
+</th>
+
+
+<th>
+Service
+</th>
+
+
+<th>
+Amount
+</th>
+
+
+<th>
+Status
+</th>
+
+
+<th>
+Action
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="invoiceTable">
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+<h3>
+MedCentral
+</h3>
+
+<p>
+Modern Healthcare Management System
+</p>
+
+<small>
+© 2026 | Built with ❤️ by Jensine Shem
+</small>
+
+</footer>
+
+
+
+<script src="css/js/billings.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctors | MedCentral</title>
+
+    <link rel="stylesheet" href="css/doctors.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        <span>+</span> MedCentral
+    </div>
+
+
+    <nav>
+        <a href="dasboard.html">Dashboard</a>
+        <a href="patient.html">Patients</a>
+        <a href="doctors.html" class="active">Doctors</a>
+        <a href="appointments.html">Appointments</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+
+</header>
+
+
+
+<main>
+
+
+<section class="page-header">
+
+    <div>
+        <h1>Doctor Management</h1>
+        <p>Manage medical staff and doctor availability.</p>
+    </div>
+
+
+    <button id="addDoctor">
+        + Add Doctor
+    </button>
+
+
+</section>
+
+
+
+
+<section class="dashboard-card">
+
+
+<div class="search-box">
+
+<input 
+type="text"
+id="search"
+placeholder="Search doctor by name...">
+
+</div>
+
+
+
+<div class="doctor-grid" id="doctorList">
+
+
+
+<div class="doctor-card">
+
+
+<img src="https://i.pravatar.cc/150?img=12">
+
+
+<div class="doctor-info">
+
+<h2>Dr. Sarah Johnson</h2>
+
+<p class="speciality">
+Cardiologist
+</p>
+
+
+<p>
+📞 0712345678
+</p>
+
+
+<p>
+🏥 Cardiology Department
+</p>
+
+
+<span class="available">
+Available
+</span>
+
+
+<button class="profile">
+View Profile
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="doctor-card">
+
+
+<img src="https://i.pravatar.cc/150?img=33">
+
+
+<div class="doctor-info">
+
+<h2>Dr. Michael Brown</h2>
+
+<p class="speciality">
+Neurologist
+</p>
+
+
+<p>
+📞 0756789123
+</p>
+
+
+<p>
+🏥 Neurology Department
+</p>
+
+
+<span class="busy">
+Busy
+</span>
+
+
+<button class="profile">
+View Profile
+</button>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+</main>
+
+
+
+
+
+
+<!-- Add Doctor Modal -->
+
+
+<div class="modal" id="modal">
+
+
+<div class="modal-content">
+
+
+<h2>Add New Doctor</h2>
+
+
+<input id="doctorName" placeholder="Doctor Name">
+
+
+<input id="speciality" placeholder="Specialization">
+
+
+<input id="department" placeholder="Department">
+
+
+<input id="phone" placeholder="Phone Number">
+
+
+
+<button id="save">
+Save Doctor
+</button>
+
+
+<button id="cancel">
+Cancel
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+<footer class="footer">
+
+    <div class="hospital-logo">
+        🏥
+    </div>
+
+    <h3>
+        MedCentral
+    </h3>
+
+    <p>
+        Modern Healthcare Management System
+    </p>
+
+    <small>
+        © 2026 | Built with ❤️ by Jensine Shem
+    </small>
+
+</footer>
+
+<script src="css/js/doctors.js"></script>
+
+
+</body>
+</html>

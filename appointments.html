@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments | MedCentral</title>
+    <link rel="stylesheet" href="css/appointments.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span>✚</span> MedCentral
+        </div>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="patient.html">Patients</a>
+            <a href="appointments.html" class="active">Appointments</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+            <div>
+                <h1>Appointments</h1>
+                <p>Manage and schedule patient appointments efficiently.</p>
+            </div>
+
+            <button class="add-btn" onclick="openAppointmentForm()">
+    + New Appointment
+            </button>
+        </section>
+
+
+        <section class="appointment-container">
+
+            <div class="appointment-card">
+
+                <div class="patient-info">
+                    <h3>John Michael</h3>
+                    <p>🩺 Cardiology Department</p>
+                    <p>👨‍⚕️ Dr. Sarah Williams</p>
+                </div>
+
+                <div class="date">
+                    <h4>18 July 2026</h4>
+                    <p>10:30 AM</p>
+                </div>
+
+                <span class="status confirmed">
+                    Confirmed
+                </span>
+
+                <button class="view-btn">
+                    View
+                </button>
+
+            </div>
+
+
+
+            <div class="appointment-card">
+
+                <div class="patient-info">
+                    <h3>Emily Johnson</h3>
+                    <p>🦷 Dental Care</p>
+                    <p>👨‍⚕️ Dr. David Brown</p>
+                </div>
+
+                <div class="date">
+                    <h4>20 July 2026</h4>
+                    <p>02:00 PM</p>
+                </div>
+
+                <span class="status pending">
+                    Pending
+                </span>
+
+                <button class="view-btn">
+                    View
+                </button>
+
+            </div>
+
+
+        </section>
+        <div class="modal" id="appointmentModal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeAppointmentForm()">
+            &times;
+        </span>
+
+        <h2>New Appointment</h2>
+
+        <input id="patientName" placeholder="Patient Name">
+
+        <input id="department" placeholder="Department">
+
+        <input id="doctor" placeholder="Doctor Name">
+
+        <input id="appointmentDate" type="date">
+
+        <input id="appointmentTime" type="time">
+
+        <button onclick="addAppointment()">
+            Save Appointment
+        </button>
+
+    </div>
+
+</div>
+
+
+    </main>
+    <footer class="footer">
+
+    <div class="hospital-logo">
+        🏥
+    </div>
+
+    <h3>
+        MedCentral
+    </h3>
+
+    <p>
+        Modern Healthcare Management System
+    </p>
+
+    <small>
+        © 2026 | Built with ❤️ by Jensine Shem
+    </small>
+
+</footer>
+    <script src="css/js/appointments.js"></script>
+
+
+</body>
+</html>

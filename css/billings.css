@@ -1,0 +1,652 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", Arial, sans-serif;
+}
+
+
+body{
+
+    background:#f5f8fc;
+    color:#1e293b;
+
+}
+
+
+/* =====================
+   NAVBAR
+===================== */
+
+
+.navbar{
+
+    height:80px;
+    background:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    border-bottom:1px solid #e2e8f0;
+
+}
+
+
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+    color:#063970;
+
+}
+
+
+.logo span{
+
+    color:#087f8c;
+
+}
+
+
+
+nav{
+
+    display:flex;
+    gap:28px;
+    align-items:center;
+
+}
+
+
+
+nav a{
+
+    text-decoration:none;
+    color:#475569;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+
+nav a:hover,
+nav .active{
+
+    color:#087f8c;
+
+}
+
+
+
+
+/* =====================
+   MAIN
+===================== */
+
+
+main{
+
+    padding:50px 8%;
+
+}
+
+
+
+
+.page-title{
+
+    margin-bottom:35px;
+
+}
+
+
+
+.page-title h1{
+
+    font-size:38px;
+    color:#063970;
+
+}
+
+
+
+.page-title p{
+
+    margin-top:12px;
+
+    color:#64748b;
+
+    max-width:700px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* =====================
+   OVERVIEW CARDS
+===================== */
+
+
+.overview{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.finance-card{
+
+    background:white;
+
+    padding:25px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+
+
+.finance-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.finance-card h4{
+
+    font-size:16px;
+
+    color:#334155;
+
+}
+
+
+
+.finance-card p{
+
+    font-size:13px;
+
+    color:#64748b;
+
+    margin:12px 0;
+
+}
+
+
+
+.finance-card strong{
+
+    font-size:32px;
+
+    color:#087f8c;
+
+}
+
+
+
+
+
+/* =====================
+   BILLING AREA
+===================== */
+
+
+.billing-grid{
+
+    display:grid;
+
+    grid-template-columns:360px 1fr;
+
+    gap:30px;
+
+}
+
+
+
+
+
+.panel{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    border:1px solid #e2e8f0;
+
+}
+
+
+
+.panel h2{
+
+    color:#063970;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.description{
+
+    color:#64748b;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+/* =====================
+   FORM
+===================== */
+
+
+label{
+
+    display:block;
+
+    margin-top:18px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+
+
+input,
+select{
+
+
+    width:100%;
+
+    padding:13px;
+
+    margin-top:7px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:14px;
+
+}
+
+
+
+input:focus,
+select:focus{
+
+    border-color:#087f8c;
+
+}
+
+
+
+
+
+button{
+
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:14px;
+
+
+    border:none;
+
+    border-radius:8px;
+
+
+    background:#087f8c;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#065f6b;
+
+}
+
+
+
+
+
+/* =====================
+   TABLE
+===================== */
+
+
+.table-header{
+
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+
+}
+
+
+
+.table-header input{
+
+    width:240px;
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    margin-top:25px;
+
+    border-collapse:collapse;
+
+}
+
+
+
+thead{
+
+    background:#063970;
+
+    color:white;
+
+}
+
+
+
+th{
+
+    padding:15px;
+
+    font-size:14px;
+
+    text-align:center;
+
+}
+
+
+
+td{
+
+    padding:14px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e2e8f0;
+
+    color:#475569;
+
+}
+
+
+
+
+
+/* STATUS */
+
+
+.status{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    cursor:pointer;
+
+}
+
+
+
+.paid{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+
+
+.pending{
+
+    background:#fef3c7;
+
+    color:#92400e;
+
+}
+
+
+
+
+.delete{
+
+    width:auto;
+
+    margin:0;
+
+    padding:7px 15px;
+
+    background:#dc2626;
+
+    border-radius:6px;
+
+    font-size:13px;
+
+}
+
+
+
+.delete:hover{
+
+    background:#991b1b;
+
+}
+
+
+
+
+
+/* =====================
+   FOOTER
+===================== */
+
+
+footer{
+
+    margin-top:60px;
+
+    background:#063970;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+
+footer h3{
+
+    color:#36c9c8;
+
+    margin-bottom:8px;
+
+}
+
+
+
+footer p{
+
+    opacity:.85;
+
+}
+
+
+
+footer small{
+
+    display:block;
+
+    margin-top:12px;
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+
+@media(max-width:1100px){
+
+
+    .overview{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .billing-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+
+        gap:20px;
+
+    }
+
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+
+    main{
+
+        padding:30px 5%;
+
+    }
+
+
+    .overview{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .table-header{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+
+    .table-header input{
+
+        width:100%;
+
+    }
+
+
+    table{
+
+        font-size:13px;
+
+    }
+
+
+}

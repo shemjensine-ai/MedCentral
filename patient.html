@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients | MedCentral</title>
+
+    <link rel="stylesheet" href="css/patient.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <span>+</span> MedCentral
+    </div>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="appointments.html">Appointments</a>
+        <a class="active" href="patients.html">Patients</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+
+<main>
+
+<section class="top-section">
+
+    <div>
+        <h1>Patient Management</h1>
+        <p>Manage patient records and medical information.</p>
+    </div>
+
+    <button id="addPatientBtn">
+        + Add Patient
+    </button>
+
+</section>
+
+
+<section class="card">
+
+    <div class="search-area">
+        <input 
+        type="text" 
+        id="searchInput"
+        placeholder="Search patient name...">
+
+    </div>
+
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Patient Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Contact</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+
+        <tbody id="patientTable">
+
+            <tr>
+                <td>#001</td>
+                <td>John Smith</td>
+                <td>34</td>
+                <td>Male</td>
+                <td>0712345678</td>
+                <td>
+                    <span class="status active-status">
+                        Active
+                    </span>
+                </td>
+
+                <td>
+                    <button class="view">
+                        View
+                    </button>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>#002</td>
+                <td>Mary Joseph</td>
+                <td>27</td>
+                <td>Female</td>
+                <td>0756789123</td>
+
+                <td>
+                    <span class="status pending">
+                        Pending
+                    </span>
+                </td>
+
+                <td>
+                    <button class="view">
+                        View
+                    </button>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- Add patient modal -->
+
+<div class="modal" id="patientModal">
+
+<div class="modal-content">
+
+<h2>Add New Patient</h2>
+
+
+<input id="name" placeholder="Full Name">
+
+<input id="age" placeholder="Age">
+
+<input id="gender" placeholder="Gender">
+
+<input id="phone" placeholder="Phone Number">
+
+
+<div class="buttons">
+
+<button id="savePatient">
+Save
+</button>
+
+
+<button id="closeModal">
+Cancel
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+<footer class="footer">
+
+    <div class="hospital-logo">
+        🏥
+    </div>
+
+    <h3>
+        MedCentral
+    </h3>
+
+    <p>
+        Modern Healthcare Management System
+    </p>
+
+    <small>
+        © 2026 | Built with ❤️ by Jensine Shem
+    </small>
+
+</footer>
+<script src="css/js/patient.js"></script>
+
+</body>
+</html>
