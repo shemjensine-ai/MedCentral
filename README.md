@@ -1,4 +1,4 @@
-# 🏥 MedCentral — Healthcare Management Platform UI
+# 🏥 MedCare — Healthcare Management Platform UI
 
 ![MedCentral Banner](images/profile.png)
 
